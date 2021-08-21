@@ -1,0 +1,54 @@
+.sidebtn {
+  min-width: 100%;
+  width: fit-content;
+  width: -moz-fit-content;
+  background-color:#4444;
+  padding: 0 30px;
+  height: 95px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffc964;
+  letter-spacing: 2.8px;
+  font-weight: 700;
+  line-height: 1.6;
+  box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 0;
+  /* sidebtn text */
+}
+.sidebtn span {
+  z-index: 1;
+  text-align: center;
+}
+.sidebtn:before, .sidebtn:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  top: 0;
+  transition: all 0.4s ease;
+  background-color: #fdd589;
+}
+.sidebtn:before {
+  left: 0;
+}
+.sidebtn:after {
+  right: 0;
+}
+.sidebtn:hover {
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px -12px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+  color: white;
+}
+.sidebtn:hover:before, .sidebtn:hover:after {
+  width: 51%;
+}

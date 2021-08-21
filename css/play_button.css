@@ -49,24 +49,23 @@
   .third {
     border-color: #3498db;
     color: #fff;
-    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    box-shadow: 0 0 40px 40px #3498db50 inset, 0 0 0 0 #3498db;
     transition: all 150ms ease-in-out;
   }
   .third:hover {
     box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
   }
-  
+
   .fourth {
-    border-color: #f1c40f;
+    border-color: #FF4C29;
     color: #fff;
-    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
-    background-position: 100%;
-    background-size: 400%;
-    transition: background 300ms ease-in-out;
+    box-shadow: 0 0 40px 40px #ff4d2931 inset, 0 0 0 0 #FF4C29;
+    transition: all 150ms ease-in-out;
   }
   .fourth:hover {
-    background-position: 0;
+    box-shadow: 0 0 10px 0 #FF4C29 inset, 0 0 10px 4px #FF4C29;
   }
+  
   
   .fifth {
     border-color: #8e44ad;

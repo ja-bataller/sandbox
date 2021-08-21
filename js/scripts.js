@@ -1,7 +1,42 @@
-/*!
-* Start Bootstrap - Shop Homepage v5.0.3 (https://startbootstrap.com/template/shop-homepage)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-shop-homepage/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
+addToCartButton = document.querySelectorAll(".add-to-cart-button");
+
+document
+  .querySelectorAll(".add-to-cart-button")
+  .forEach(function (addToCartButton) {
+    addToCartButton.addEventListener("click", function () {
+      addToCartButton.classList.add("added");
+      iziToast.error({
+        title: data.errors.username,
+        message: "Unauthorized Access",
+        position: "topCenter",
+        timeout: 3000,
+    
+     });
+    });
+  });
+
+  $(document).ready(function () {
+    $(".customer-logos").slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 3
+          }
+        }
+      ]
+    });
+  });
