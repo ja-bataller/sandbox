@@ -17,14 +17,14 @@
     width: auto;
   }
   .add-to-cart-button:active {
-    box-shadow: 0 0 0 0.2rem rgba(252, 186, 3, 0.45);
+    box-shadow: 0 0 0 0.2rem rgba(157, 252, 3, 0.45);
     transform: translateY(4px);
   }
   .add-to-cart-button:hover {
     cursor: pointer;
   }
   .add-to-cart-button:hover, .add-to-cart-button:focus {
-    box-shadow: 0 0 0 0.2rem rgba(252, 186, 3, 0.45);
+    box-shadow: 0 0 0 0.2rem #A7E9AF;
     transform: translateY(-1px);
   }
   .add-to-cart-button.added {
