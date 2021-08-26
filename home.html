@@ -46,19 +46,19 @@
    <!-- Navigation-->
    <nav class="navbar navbar-expand-lg navbar-dark customNavBar">
       <div class="container px-4 px-lg-5">
-         <a class="navbar-brand" href="index.html"><i class="fas fa-cube"></i> SANDBOX</a>
+         <a class="navbar-brand" href="home.html"><i class="fas fa-cube"></i> SANDBOX</a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
                class="navbar-toggler-icon"></span></button>
          <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-               <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+               <li class="nav-item"><a class="nav-link active" aria-current="page" href="home.html">Home</a></li>
                <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                      data-bs-toggle="dropdown" aria-expanded="false">
                      Store
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
                      <li><a class="dropdown-item" href="games.htmL"><i class="fas fa-gamepad"></i> Games</a></li>
                      <li><a class="dropdown-item" href="#"><i class="fas fa-desktop"></i> Consoles</a></li>
                      <li><a class="dropdown-item" href="#"><i class="far fa-keyboard"></i> Peripherals</a></li>
@@ -73,8 +73,8 @@
                <div class="navbar-nav ml-auto">
                   <a class="nav-link customNavLink signinBtn" href="login.html" tabindex="-1" aria-disabled="true"> <i
                         class="fas fa-user"></i> Sign-in</a>
-                  <a class="nav-link customNavLink signinBtn" href="#" tabindex="-1" aria-disabled="true"> <i
-                        class="fas fa-shopping-cart"></i></a>
+                  <a id="cartCount" class="nav-link customNavLink signinBtn" href="#" tabindex="-1" aria-disabled="true"> <i
+                        class="fas fa-shopping-cart"></i> </a>
                </div>
             </form>
          </div>
@@ -154,7 +154,7 @@
             <div class="col mb-5">
                <div class="card h-100 wow fadeInUp">
                   <!-- Console badge-->
-                  <div class="badge bg-primary text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
+                  <div class="badge windowsColor text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
                         class="fab fa-windows"></i>
                   </div>
                   <!-- Sale badge-->
@@ -197,7 +197,7 @@
                               <path fill="#ffffff"
                                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.29 16.29L5.7 12.7c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L10 14.17l6.88-6.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-7.59 7.59c-.38.39-1.02.39-1.41 0z" />
                            </svg>
-                           <span class="add-to-cart">Add to cart</span>
+                           <span id="cartBtn" class="add-to-cart">Add to cart</span>
                            <span class="added-to-cart">Added to cart</span>
                         </button>
                      </div>
@@ -207,7 +207,7 @@
             <div class="col mb-5">
                <div class="card h-100 wow fadeInUp">
                   <!-- Console badge-->
-                  <div class="badge bg-primary text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
+                  <div class="badge windowsColor text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
                         class="fab fa-windows"></i>
                   </div>
                   <!-- Sale badge-->
@@ -263,7 +263,7 @@
             <div class="col mb-5">
                <div class="card h-100 wow fadeInUp">
                   <!-- Console badge-->
-                  <div class="badge bg-primary text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
+                  <div class="badge windowsColor text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
                         class="fab fa-windows"></i>
                   </div>
                   <!-- Sale badge-->
@@ -317,7 +317,7 @@
             <div class="col mb-5">
                <div class="card h-100 wow fadeInUp">
                   <!-- Console badge-->
-                  <div class="badge bg-primary text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
+                  <div class="badge windowsColor text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
                         class="fab fa-windows"></i>
                   </div>
                   <!-- Sale badge-->
@@ -378,7 +378,7 @@
          <div class="col-6 mb-3 ">
             <div class="card h-100 rounded-lg wow fadeInUp">
                <!-- Console badge-->
-               <div class="badge bg-primary text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
+               <div class="badge windowsColor text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
                      class="fab fa-windows"></i>
                </div>
                <!-- Sale badge-->
@@ -402,7 +402,7 @@
          <div class="col-6 mb-3">
             <div class="card h-100 rounded-lg wow fadeInUp">
                <!-- Console badge-->
-               <div class="badge bg-primary text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
+               <div class="badge windowsColor text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
                      class="fab fa-windows"></i>
                </div>
                <!-- Sale badge-->
@@ -426,7 +426,7 @@
          <div class="col-6 mb-3">
             <div class="card h-100 rounded-lg wow fadeInUp">
                <!-- Console badge-->
-               <div class="badge bg-primary text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
+               <div class="badge windowsColor text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
                      class="fab fa-windows"></i>
                </div>
                <!-- Sale badge-->
@@ -450,7 +450,7 @@
          <div class="col-6 mb-3">
             <div class="card h-100 rounded-lg wow fadeInUp">
                <!-- Console badge-->
-               <div class="badge bg-primary text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
+               <div class="badge windowsColor text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
                      class="fab fa-windows"></i>
                </div>
                <!-- Sale badge-->
@@ -486,8 +486,7 @@
          <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
             <div class="col mb-3">
                <div class="card h-100 wow fadeInUp">
-                  <img class="card-img-top zoom" src="assets/img/consoles/playstation5.png"
-                     data-magnify-src="assets/img/consoles/playstation5.png">
+                  <img class="card-img-top" src="assets/img/consoles/playstation5.png">
                   <!-- Product details-->
                   <div class="card-body p-4">
                      <div class="text-center">
@@ -1096,22 +1095,56 @@
    </section>
 
    <!-- Footer-->
-   <footer>
-      <div class="footer">
-         <div class="rowCustom">
-            <a href="#"><i class="mr-3 fab fa-2x fa-facebook-f"></i></a>
-            <a href="#"><i class="mr-3 fab fa-2x fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-2x fa-twitter"></i></a>
+   <footer class="site-footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12 col-md-6">
+               <h6>About</h6>
+               <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ad consequatur
+                  vitae corporis maiores ducimus esse sint quasi necessitatibus, explicabo adipisci vero tenetur
+                  corrupti totam enim quisquam dignissimos! Nam, deleniti.</p>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+               <h6>Newsletter</h6>
+
+               <p>Subscribe to our weekly Newsletter and stay tuned.</p>
+
+               <form action="">
+                  <div class="input-group flex-nowrap mb-2">
+                     <span class="input-group-text" id="addon-wrapping"><i class="far fa-envelope"></i></span>
+                     <input type="email" class="form-control" placeholder="your email here" aria-label="your@email.com" aria-describedby="addon-wrapping" required>
+                     <button class="btn btn-outline-info" type="submit" id="subscribeBtn">Subscribe</button>
+                  </div>
+               </form>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+               <h6>Quick Links</h6>
+               <ul class="footer-links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="games.html">Store</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="about.html">About</a></li>
+               </ul>
+            </div>
          </div>
-         <div class="rowCustom">
-            <ul>
-               <li><a href="#">Contact us</a></li>
-               <li><a href="#">Privacy Policy</a></li>
-               <li><a href="#">Terms & Conditions</a></li>
-            </ul>
-         </div>
-         <div class="rowCustom">
-            SANDBOX Copyright © 2021 - All rights reserved
+         <hr>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+               <p class="copyright-text">SANDBOX Copyright &copy; 2021 - All rights reserved
+               </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+               <ul class="social-icons">
+                  <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></i></a></li>
+                  <li><a class="dribbble" href="#"><i class="fab fa-instagram"></i></a></li>
+               </ul>
+            </div>
          </div>
       </div>
    </footer>
@@ -1126,18 +1159,8 @@
       integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-   <!-- Magnify.js -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/js/jquery.magnify.js"
-      integrity="sha512-+8UjzErRT0NC6aEUwkW8TrucGEUHaq1pXSNiZz+WcE3iO6a+Y5joy6OdsS+VTkFGGkazVn35Xm5I+dksnjBlEg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-   <script>
-      $(document).ready(function () {
-         $('.zoom').magnify({
-            speed: 200,
-         });
-      });
-   </script>
+   <!-- SweetAlert 2 -->
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
    <!-- Core theme JS-->
    <script src="js/scripts.js"></script>
@@ -1147,8 +1170,6 @@
    <script>
       new WOW().init();
    </script>
-
-
 
 </body>
 

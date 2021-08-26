@@ -63,6 +63,10 @@
   --bs-body-bg: #fff;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
