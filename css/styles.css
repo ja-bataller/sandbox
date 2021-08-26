@@ -180,6 +180,18 @@
   color: #888888;
 }
 
+.windowsColor{
+  background-color: #00adef;
+}
+
+.playstationColor{
+  background-color: #006FCD;
+}
+
+.xboxColor{
+  background-color: #007F00;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
