@@ -19,17 +19,9 @@
    <!-- Core theme CSS (includes Bootstrap)-->
    <link href="css/styles.css" rel="stylesheet" />
 
-   <!--FONT AWESOME-->
+   <!--FONT AWESOME CDN-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
-      integrity="sha512-O03ntXoVqaGUTAeAmvQ2YSzkCvclZEcPQu1eqloPaHfJ5RuNGiS4l+3duaidD801P50J28EHyonCV06CUlTSag=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/css/magnify.min.css"
-      integrity="sha512-wzhF4/lKJ2Nc8mKHNzoFP4JZsnTcBOUUBT+lWPcs07mz6lK3NpMH1NKCKDMarjaw8gcYnSBNjjllN4kVbKedbw=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
    <link rel="stylesheet" href="css/animate.css">
@@ -73,7 +65,7 @@
                <div class="navbar-nav ml-auto">
                   <a class="nav-link customNavLink signinBtn" href="login.html" tabindex="-1" aria-disabled="true"> <i
                         class="fas fa-user"></i> Sign-in</a>
-                  <a id="cartCount" class="nav-link customNavLink signinBtn" href="#" tabindex="-1" aria-disabled="true"> <i
+                  <a id="cartCount" class="nav-link customNavLink signinBtn" href="cart.html" tabindex="-1" aria-disabled="true"> <i
                         class="fas fa-shopping-cart"></i> </a>
                </div>
             </form>
@@ -154,8 +146,8 @@
             <div class="col mb-5">
                <div class="card h-100 wow fadeInUp">
                   <!-- Console badge-->
-                  <div class="badge windowsColor text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
-                        class="fab fa-windows"></i>
+                  <div class="badge xboxColor text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
+                        class="fab fa-xbox"></i>
                   </div>
                   <!-- Sale badge-->
                   <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 2.5rem">Sale
@@ -317,8 +309,8 @@
             <div class="col mb-5">
                <div class="card h-100 wow fadeInUp">
                   <!-- Console badge-->
-                  <div class="badge windowsColor text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
-                        class="fab fa-windows"></i>
+                  <div class="badge playstationColor text-white position-absolute"
+                  style="top: 0.5rem; right: 0.5rem"><i class="fab fa-playstation"></i>
                   </div>
                   <!-- Sale badge-->
                   <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 2.5rem">Sale
@@ -377,28 +369,30 @@
       <div class="row">
          <div class="col-6 mb-3 ">
             <div class="card h-100 rounded-lg wow fadeInUp">
-               <!-- Console badge-->
-               <div class="badge windowsColor text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><i
-                     class="fab fa-windows"></i>
-               </div>
-               <!-- Sale badge-->
-               <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 2.5rem">Free</div>
-               <!-- Product image-->
-               <img class="card-img-top" src="assets/img/valorant.jpg" alt="..." />
-               <!-- Product details-->
-               <div class="card-body">
-                  <div class="text-center">
-                     <!-- Product name-->
-                     <h4 class="fw-bolder">VALORANT</h4>
-                     <span class="description">We are Valorant, A 5v5 character-based tactical shooter</span>
-                  </div>
-               </div>
-               <div class="card-footer bg-transparent text-center">
-                  <button class="customBtn third"
-                     onclick=" window.open('https://playvalorant.com/en-us/','_blank')">PLAY NOW!</button>
-               </div>
+                <!-- Console badge-->
+                <div class="badge windowsColor text-white position-absolute"
+                    style="top: 0.5rem; right: 0.5rem"><i class="fab fa-windows"></i>
+                </div>
+                <!-- Sale badge-->
+                <div class="badge bg-success text-white position-absolute"
+                    style="top: 0.5rem; right: 2.5rem">Free</div>
+                <!-- Product image-->
+                <img class="card-img-top" src="assets/img/games/cs_global_offensive_cover.jpg" alt="..." />
+                <!-- Product details-->
+                <div class="card-body">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h4 class="fw-bolder">Counter Strike Global Offensive</h4>
+                        <span class="description">"Let's go, fellas." "Let's move out!" "Let's move out." "Remove any doubts in your head; it's us, or them."</span>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent text-center">
+                    <button class="customBtn third"
+                        onclick=" window.open('https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/','_blank')">PLAY
+                        NOW!</button>
+                </div>
             </div>
-         </div>
+        </div>
          <div class="col-6 mb-3">
             <div class="card h-100 rounded-lg wow fadeInUp">
                <!-- Console badge-->
@@ -1100,9 +1094,14 @@
          <div class="row">
             <div class="col-sm-12 col-md-6">
                <h6>About</h6>
-               <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ad consequatur
-                  vitae corporis maiores ducimus esse sint quasi necessitatibus, explicabo adipisci vero tenetur
-                  corrupti totam enim quisquam dignissimos! Nam, deleniti.</p>
+               <p class="text-justify">Sandbox Games Store is a privately owned retail store by SGC (Sandbox Group
+                  Corporation), pioneering in the Philippines. Sandbox promotes international and locally-made technologies and is
+                  one of the best retailers of games, computer peripherals, gaming chairs, accessories, and
+                  merch's - both local and company brands.
+                  <br>
+                  Whether it be console, games, or devices, we are always sure to have the latest and in-demand
+                  ones available in our store at a reasonable price tag.
+              </p>
             </div>
 
             <div class="col-xs-6 col-md-3">
@@ -1159,7 +1158,7 @@
       integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-   <!-- SweetAlert 2 -->
+   <!-- SweetAlert 2 CDN -->
    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
    <!-- Core theme JS-->
@@ -1167,6 +1166,7 @@
    <script src="js/up_button.js"></script>
    <script src="js/wow.min.js"></script>
 
+   <!-- WOW.js init -->
    <script>
       new WOW().init();
    </script>

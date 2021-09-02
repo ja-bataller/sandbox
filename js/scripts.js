@@ -1,15 +1,50 @@
 let subscribeBtn = document.querySelector("#subscribeBtn")
 
-subscribeBtn.addEventListener("click", function(e){
-  e.preventDefault()
-
-  Swal.fire({
-    title: 'Success!',
-    text: 'Thank you for subscribing to our newsletter.',
-    icon: 'success',
-    confirmButtonText: 'Close'
+if (subscribeBtn) {
+  subscribeBtn.addEventListener("click", function(e){
+    e.preventDefault()
+  
+    Swal.fire({
+      title: 'Success!',
+      text: 'Thank you for subscribing to our newsletter.',
+      icon: 'success',
+      confirmButtonText: 'Close'
+    })
   })
-})
+}
+
+let sendBtn = document.querySelector("#sendBtn")
+
+if(sendBtn) {
+  sendBtn.addEventListener("click", function(e){
+    e.preventDefault()
+  
+    Swal.fire({
+      title: 'Success!',
+      text: 'Your message has been sent successfully.',
+      icon: 'success',
+      confirmButtonText: 'Close'
+    })
+  })
+}
+
+let checkoutBtn = document.querySelector("#checkoutBtn")
+
+if(checkoutBtn) {
+  checkoutBtn.addEventListener("click", function(e){
+    e.preventDefault()
+  
+    Swal.fire({
+      title: 'Success!',
+      text: 'Thank you for placing your order at Sandbox Store.',
+      icon: 'success',
+      confirmButtonText: 'Close'
+    })
+  })
+
+  setTimeout(function(){ window.location.href='home.html' }, 4000);
+}
+
 
 
 let addToCartButton = document.querySelectorAll(".add-to-cart-button");
