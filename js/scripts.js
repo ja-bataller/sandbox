@@ -40,9 +40,11 @@ if(checkoutBtn) {
       icon: 'success',
       confirmButtonText: 'Close'
     })
+
+    setTimeout(function(){ window.location.href='home.html' }, 2000);
   })
 
-  setTimeout(function(){ window.location.href='home.html' }, 4000);
+  
 }
 
 
