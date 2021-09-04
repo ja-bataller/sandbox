@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>SANDBOX - Consoles</title>
+
+    <!-- Favicon-->
+    <link rel="icon" href="assets/img/favicon.ico">
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/play_button.css">
+    <link rel="stylesheet" href="css/view_more_button.css">
+    <link rel="stylesheet" href="css/add_to_cart.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/side_button.css">
+</head>
+
+<body>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark customNavBar">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="home.html"><i class="fas fa-cube"></i> SANDBOX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Store
+                        </a>
+                        <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="games.html"><i class="fas fa-gamepad"></i> Games</a></li>
+                            <li><a class="dropdown-item " href="consoles.html"><i class="fas fa-desktop"></i>
+                                    Consoles</a></li>
+                            <li><a class="dropdown-item" href="peripherals.html"><i class="far fa-keyboard"></i>
+                                    Peripherals</a></li>
+                            <li><a class="dropdown-item" href="chairs.html"><i class="fas fa-chair"></i> Chairs</a></li>
+                            <li><a class="dropdown-item" href="merch.html"><i class="fas fa-tshirt"></i> Merch</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+                <form>
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link customNavLink signinBtn" href="login.html" tabindex="-1"
+                            aria-disabled="true"> <i class="fas fa-user"></i> Sign-in</a>
+                        <a id="cartCount" class="nav-link customNavLink signinBtn" href="cart.html" tabindex="-1"
+                            aria-disabled="true"> <i class="fas fa-shopping-cart"></i> </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="container mt-5 mb-3 wow fadeInLeft">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-interval="10000"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube.com/embed/RkC0l4iekYo?controls=0&amp;start=76&mute=1&autoplay=1&loop=1&playlist=RkC0l4iekYo"
+                                    title="PS5" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="carousel-caption d-none d-md-block mb-5">
+                                <img class="img-fluid" src="assets/img/consoles/PS5_logo.png" alt="PS5" width="300">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube.com/embed/0tUqIHwHDEc?controls=0&amp;start=66&mute=1&autoplay=1&loop=1&playlist=0tUqIHwHDEc"
+                                    title="Xbox Series X" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="carousel-caption d-none d-md-block mb-5">
+                                <img class="img-fluid" src="assets/img/consoles/xbox_series_x_logo.png"
+                                    alt="Xbox Series X" width="300">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube.com/embed/4mHq6Y7JSmg?controls=0&amp;start=215&mute=1&autoplay=1&loop=1&playlist=4mHq6Y7JSmg"
+                                    title="Nintendo Switch" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="carousel-caption d-none d-md-block mb-5">
+                                <img class="img-fluid" src="assets/img/consoles/nintendo_switch_logo.png"
+                                    alt="Nintendo Switch" width="300">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Consoles -->
+    <section class="py-5 mt-5">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h4 class="mb-4 wow fadeInLeft">Consoles</h4>
+                </div>
+                <div class="col-lg-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                                class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+                <div class="col mb-5">
+                    <div class="card h-100 wow fadeInUp">
+                        <img class="card-img-top" src="assets/img/consoles/playstation5.png">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Playstation 5</h5>
+                                <!-- Product price-->
+                                ₱27,990.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="d-flex justify-content-center">
+                                <button class="add-to-cart-button mt-3 addToCartBtn">
+                                    <svg class="add-to-cart-box box-1" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="2" fill="#ffffff" />
+                                    </svg>
+                                    <svg class="add-to-cart-box box-2" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="2" fill="#ffffff" />
+                                    </svg>
+                                    <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+                                        </path>
+                                    </svg>
+                                    <svg class="tick" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path fill="none" d="M0 0h24v24H0V0z" />
+                                        <path fill="#ffffff"
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.29 16.29L5.7 12.7c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L10 14.17l6.88-6.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-7.59 7.59c-.38.39-1.02.39-1.41 0z" />
+                                    </svg>
+                                    <span class="add-to-cart">Add to cart</span>
+                                    <span class="added-to-cart">Added to cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card h-100 wow fadeInUp">
+                        <img class="card-img-top" src="assets/img/consoles/playstation4.png">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Playstation 4</h5>
+                                <!-- Product price-->
+                                ₱15,850.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="d-flex justify-content-center">
+                                <button class="add-to-cart-button mt-3 addToCartBtn">
+                                    <svg class="add-to-cart-box box-1" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="2" fill="#ffffff" />
+                                    </svg>
+                                    <svg class="add-to-cart-box box-2" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="2" fill="#ffffff" />
+                                    </svg>
+                                    <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+                                        </path>
+                                    </svg>
+                                    <svg class="tick" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path fill="none" d="M0 0h24v24H0V0z" />
+                                        <path fill="#ffffff"
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.29 16.29L5.7 12.7c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L10 14.17l6.88-6.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-7.59 7.59c-.38.39-1.02.39-1.41 0z" />
+                                    </svg>
+                                    <span class="add-to-cart">Add to cart</span>
+                                    <span class="added-to-cart">Added to cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card h-100 wow fadeInUp">
+                        <img class="card-img-top" src="assets/img/consoles/xbox_one_s.png">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Xbox One S</h5>
+                                <!-- Product price-->
+                                ₱9,063.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="d-flex justify-content-center">
+                                <button class="add-to-cart-button mt-3 addToCartBtn">
+                                    <svg class="add-to-cart-box box-1" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="2" fill="#ffffff" />
+                                    </svg>
+                                    <svg class="add-to-cart-box box-2" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="2" fill="#ffffff" />
+                                    </svg>
+                                    <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+                                        </path>
+                                    </svg>
+                                    <svg class="tick" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path fill="none" d="M0 0h24v24H0V0z" />
+                                        <path fill="#ffffff"
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.29 16.29L5.7 12.7c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L10 14.17l6.88-6.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-7.59 7.59c-.38.39-1.02.39-1.41 0z" />
+                                    </svg>
+                                    <span class="add-to-cart">Add to cart</span>
+                                    <span class="added-to-cart">Added to cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card h-100 wow fadeInUp">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/img/consoles/xbox_series_x.png" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Xbox One X</h5>
+                                ₱38,682.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+
+                            <div class="d-flex justify-content-center">
+                                <button class="add-to-cart-button mt-3">
+                                    <svg class="add-to-cart-box box-1" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="2" fill="#ffffff" />
+                                    </svg>
+                                    <svg class="add-to-cart-box box-2" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="2" fill="#ffffff" />
+                                    </svg>
+                                    <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+                                        </path>
+                                    </svg>
+                                    <svg class="tick" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path fill="none" d="M0 0h24v24H0V0z" />
+                                        <path fill="#ffffff"
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.29 16.29L5.7 12.7c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L10 14.17l6.88-6.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-7.59 7.59c-.38.39-1.02.39-1.41 0z" />
+                                    </svg>
+                                    <span class="add-to-cart">Add to cart</span>
+                                    <span class="added-to-cart">Added to cart</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card h-100 wow fadeInUp">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/img/consoles/nintendo_switch.png" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Nintendo Switch</h5>
+                                <!-- Product price-->
+                                ₱15,450.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="d-flex justify-content-center">
+                                <button class="add-to-cart-button mt-3">
+                                    <svg class="add-to-cart-box box-1" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="2" fill="#ffffff" />
+                                    </svg>
+                                    <svg class="add-to-cart-box box-2" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="2" fill="#ffffff" />
+                                    </svg>
+                                    <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+                                        </path>
+                                    </svg>
+                                    <svg class="tick" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path fill="none" d="M0 0h24v24H0V0z" />
+                                        <path fill="#ffffff"
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.29 16.29L5.7 12.7c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L10 14.17l6.88-6.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-7.59 7.59c-.38.39-1.02.39-1.41 0z" />
+                                    </svg>
+                                    <span class="add-to-cart">Add to cart</span>
+                                    <span class="added-to-cart">Added to cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card h-100 wow fadeInUp">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/img/consoles/nintendo_switch_lite.png" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Nintendo Switch Lite</h5>
+                                <!-- Product price-->
+                                ₱9,955.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="d-flex justify-content-center">
+                                <button class="add-to-cart-button mt-3">
+                                    <svg class="add-to-cart-box box-1" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="2" fill="#ffffff" />
+                                    </svg>
+                                    <svg class="add-to-cart-box box-2" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="2" fill="#ffffff" />
+                                    </svg>
+                                    <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+                                        </path>
+                                    </svg>
+                                    <svg class="tick" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path fill="none" d="M0 0h24v24H0V0z" />
+                                        <path fill="#ffffff"
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.29 16.29L5.7 12.7c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L10 14.17l6.88-6.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-7.59 7.59c-.38.39-1.02.39-1.41 0z" />
+                                    </svg>
+                                    <span class="add-to-cart">Add to cart</span>
+                                    <span class="added-to-cart">Added to cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card h-100 wow fadeInUp">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/img/consoles/NES_Consoles.png" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Nintendo Entertainment System</h5>
+                                <!-- Product price-->
+                                ₱3,218.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="d-flex justify-content-center">
+                                <button class="add-to-cart-button mt-3">
+                                    <svg class="add-to-cart-box box-1" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="2" fill="#ffffff" />
+                                    </svg>
+                                    <svg class="add-to-cart-box box-2" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="2" fill="#ffffff" />
+                                    </svg>
+                                    <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+                                        </path>
+                                    </svg>
+                                    <svg class="tick" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path fill="none" d="M0 0h24v24H0V0z" />
+                                        <path fill="#ffffff"
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.29 16.29L5.7 12.7c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L10 14.17l6.88-6.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-7.59 7.59c-.38.39-1.02.39-1.41 0z" />
+                                    </svg>
+                                    <span class="add-to-cart">Add to cart</span>
+                                    <span class="added-to-cart">Added to cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card h-100 wow fadeInUp">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/img/consoles/nintendo_snes_classic.png" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">SNES Classic</h5>
+                                <!-- Product price-->
+                                ₱3,320.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="d-flex justify-content-center">
+                                <button class="add-to-cart-button mt-3">
+                                    <svg class="add-to-cart-box box-1" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="2" fill="#ffffff" />
+                                    </svg>
+                                    <svg class="add-to-cart-box box-2" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="2" fill="#ffffff" />
+                                    </svg>
+                                    <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+                                        </path>
+                                    </svg>
+                                    <svg class="tick" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path fill="none" d="M0 0h24v24H0V0z" />
+                                        <path fill="#ffffff"
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.29 16.29L5.7 12.7c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L10 14.17l6.88-6.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-7.59 7.59c-.38.39-1.02.39-1.41 0z" />
+                                    </svg>
+                                    <span class="add-to-cart">Add to cart</span>
+                                    <span class="added-to-cart">Added to cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <h6><i class="fas fa-cube"></i> Sandbox</h6>
+                    <h5 style="font-size: 1rem;" class="text-justify">Sandbox is the ultimate destination for gamers and
+                        enthusiasts
+                    </h5>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Customer Service</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Centre</a></li>
+                        <li><a href="#">Payment Methods</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Return & Refund</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Newsletter</h6>
+
+                    <p>Subscribe to our weekly Newsletter and stay tuned.</p>
+
+                    <form action="">
+                        <div class="input-group flex-nowrap mb-2">
+                            <span class="input-group-text" id="addon-wrapping"><i class="far fa-envelope"></i></span>
+                            <input type="email" class="form-control" placeholder="your email here"
+                                aria-label="your@email.com" aria-describedby="addon-wrapping" required>
+                            <button class="btn btn-outline-info" type="submit" id="subscribeBtn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">SANDBOX Copyright &copy; 2021 - All rights reserved
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    <!-- SweetAlert 2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="js/up_button.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
