@@ -26,6 +26,62 @@
 
 <body>
 
+    <!-- Account Settings -->
+    <div class="modal fade" style="color: #2e2e2e;" id="account_settings_modal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel"> <i class="fas fa-user-cog"></i> Change password</h3>
+                </div>
+                <div class="modal-body">
+                    <form id="changePasswordForm">
+                        <div class="form-group">
+                            <label for="currentPassword" class="col-form-label">Current Password:</label>
+                            <input type="password" class="form-control" name="currentPassword" id="currentPassword"
+                                placeholder="Type your Current password here" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword" class="col-form-label">New Password:</label>
+                            <input type="password" class="form-control" name="newPassword" id="newPassword"
+                                placeholder="Type your New password here" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword" class="col-form-label">Confirm New Password:</label>
+                            <input type="password" class="form-control" name="confirmPassword" id="confirmPassword"
+                                placeholder="Re-type your New password here" required>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="changePasswordClose" data-bs-dismiss="modal"
+                                class="btn btn-outline-secondary">Close</button>
+                            <button type="submit" id="changePassword" class="btn btn-outline-success"> <i
+                                    class="fa fa-lock"></i> CONFIRM</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" style="color: #2e2e2e;" id="logoutModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> <i class="fas fa-sign-out-alt"></i> Logout</h5>
+                </div>
+                <div class="modal-body">Are you sure you want to Logout?</div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-secondary" type="button" data-bs-dismiss="modal">NO</button>
+                    <a class="btn btn-outline-danger" href="home.html">YES</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark customNavBar">
         <div class="container px-4 px-lg-5">
@@ -62,9 +118,12 @@
                                 <i class="fas fa-user"></i> John Doe
                             </a>
                             <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-user-cog"></i> Account
+                                <li><a href="#account_settings_modal" data-bs-toggle="modal"
+                                        data-bs-target="#account_settings_modal" class="dropdown-item"><i
+                                            class="fas fa-user-cog"></i> Account
                                         Settings</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                                <li><a class="dropdown-item" href="#logoutModal" data-bs-toggle="modal"
+                                        data-bs-target="#logoutModal"><i class="fas fa-sign-out-alt"></i> Logout</a>
                                 </li>
                             </ul>
                         </li>
@@ -240,7 +299,7 @@
                 <div class="col-xs-6 col-md-3">
                     <h6>Quick Links</h6>
                     <ul class="footer-links">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="home.html">Home</a></li>
                         <li><a href="games.html">Store</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="about.html">About</a></li>
